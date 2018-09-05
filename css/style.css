@@ -1,0 +1,163 @@
+/* NAVBAR */
+/* SIDEBAR BACKGROUND EFFECTS */
+
+ .navBg
+ {
+   background-color: rgb(103, 164, 214) !important;
+   -webkit-box-shadow: inset 0 0 73px rgba(0, 0, 0, 0.25), 4px 0 4px rgba(0, 0, 0, 0.15);
+   -moz-box-shadow: inset 0 0 73px rgba(0, 0, 0, 0.25), 4px 0 4px rgba(0, 0, 0, 0.15);
+   box-shadow: inset 0 0 73px rgba(0, 0, 0, 0.25), 4px 0 4px rgba(0, 0, 0, 0.15);
+ }
+
+ a.navBg:hover, a.navBg:focus, button.navBg:hover, button.navBg:focus
+ {
+   background-color: #0062cc !important;
+ }
+
+
+/* VERTICAL NAVBAR */
+@media (min-width: 992px)
+{
+  #sideNav
+  {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand
+  {
+    display: flex;
+    margin-top: 100px;
+    padding-bottom: 100px;
+  }
+  #sideNav .navbar-brand .img-profile
+  {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.4rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse
+  {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav
+  {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item
+  {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link
+  {
+    display: block;
+    padding-bottom: 30px;
+  }
+  .sidebar-content
+  {
+    max-height: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    position: relative;
+  }
+}
+
+.collapseAlign
+{
+  text-align: center;
+}
+
+
+/* SIDEBAR SCROLL EFFECT */
+.sidebar-content.desktop
+{
+  overflow-y: hidden;
+}
+
+.mCSB_scrollTools
+{
+  width: 6px;
+}
+
+.mCSB_inside>.mCSB_container
+{
+  margin-right: 0px;
+}
+
+
+/* MENU EFFECTS */
+nav a
+{
+  position: relative;
+}
+
+nav a:hover, nav a:focus
+{
+	outline: none;
+}
+
+.cl-effect-8 a
+{
+	padding: 10px 20px;
+}
+
+.cl-effect-8 a::before, .cl-effect-8 a::after
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80%;
+	border: 1.5px solid rgba(255, 255, 255, 0.2);
+	content: '';
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.cl-effect-8 a::after  {
+	border-color: #fff;
+	opacity: 0;
+	-webkit-transform: translateY(-7px) translateX(6px);
+	-moz-transform: translateY(-7px) translateX(6px);
+	transform: translateY(-7px) translateX(6px);
+}
+
+.cl-effect-8 a:hover::before,
+.cl-effect-8 a:focus::before {
+	opacity: 0;
+	-webkit-transform: translateY(5px) translateX(-5px);
+	-moz-transform: translateY(5px) translateX(-5px);
+	transform: translateY(5px) translateX(-5px);
+}
+
+.cl-effect-8 a:hover::after,
+.cl-effect-8 a:focus::after  {
+	opacity: 1;
+	-webkit-transform: translateY(0px) translateX(0px);
+	-moz-transform: translateY(0px) translateX(0px);
+	transform: translateY(0px) translateX(0px);
+}
+
+@media (max-width: 992px)
+{
+  .cl-effect-8 a
+  {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .cl-effect-8 a::before, .cl-effect-8 a::after
+  {
+    height: 100%;
+  }
+}
