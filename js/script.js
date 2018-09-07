@@ -1,7 +1,8 @@
 // SCROLL EFFECT FUNCTION
-
 jQuery(function ($)
 {
+  var x = window.matchMedia("(min-width: 992px)");
+
   if (x.matches)
   {
     $(".sidebar-content").mCustomScrollbar(
@@ -14,4 +15,12 @@ jQuery(function ($)
     }
   });
 
-  var x = window.matchMedia("(min-width: 992px)");
+
+// TYPED JS
+$(document).ready(function(){
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    backSpeed: 40,
+    typeSpeed: 90
+  });
+});
