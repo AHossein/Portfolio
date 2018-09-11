@@ -194,7 +194,7 @@ h1 span
 
 @media (min-width: 992px) and (max-width: 1800px)
 {
-  #about
+  #about, #experience
   {
     margin-left: 21rem;
   }
@@ -497,4 +497,10 @@ h1 span
     margin-top: 20px;
     margin-left: -10px;
   }
+}
+
+
+.small-container
+{
+  text-align: center;
 }
