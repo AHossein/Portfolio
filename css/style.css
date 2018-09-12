@@ -194,7 +194,7 @@ h1 span
 
 @media (min-width: 992px) and (max-width: 1800px)
 {
-  #about, #experience
+  #about, #experience, #education, #abilities, #interests, #contact
   {
     margin-left: 21rem;
   }
@@ -499,8 +499,149 @@ h1 span
   }
 }
 
-
+/* EXPERIENCES SECTION */
 .small-container
 {
   text-align: center;
+}
+
+.hrBar
+{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 760px)
+{
+  .job-description
+  {
+    text-align: center;
+  }
+  .dates
+  {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .job-title
+  {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+/* EDUCATION SECTION */
+
+@media (max-width: 760px)
+{
+  .education-description
+  {
+    text-align: center;
+  }
+  .dates
+  {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .edu-title
+  {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+/* ABILITIES SECTION */
+.flex
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card
+{
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  padding: 2.5rem;
+  background: #fff;
+  border: 1px solid #ebecec;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  margin: .5rem;
+}
+
+.card:hover
+{
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0 6px 25px rgba(0,0,0,.1);
+  box-shadow: 0 6px 25px rgba(0,0,0,.1);
+}
+.card img
+{
+  display: block;
+  margin: 0 auto;
+}
+
+.card h3
+{
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 2rem 0 0;
+  text-align: center;
+}
+
+.skills
+{
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  }
+
+.skills .card img
+{
+  max-width: 50px;
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 650px)
+{
+  .skills .card
+  {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 calc(25% - 1rem);
+    flex: 1 1 calc(25% - 1rem);
+  }
+}
+
+@media (max-width: 1167px)
+{
+  .skills .card
+  {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 calc(33% - 1rem);
+    flex: 1 1 calc(33% - 1rem);
+  }
+}
+
+@media (max-width: 599px)
+{
+  .skills .card
+  {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 calc(50% - 1rem);
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 431px)
+{
+  .skills .card
+  {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 calc(100% - 1rem);
+    flex: 1 1 calc(100% - 1rem);
+  }
 }
