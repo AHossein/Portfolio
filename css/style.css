@@ -662,8 +662,8 @@ h1 span
 div.wrapper
 {
 	display: flex;
-	width: 90%;
-	justify-content: space-around;
+	width: 100%;
+	/* justify-content: space-around; */
   margin: 20px;
 }
 
@@ -675,10 +675,13 @@ div.card-int
 	padding: 1.5rem;
 	background: white;
 	position: relative;
-	display: flex;
-	align-items: flex-end;
+	/* align-items: flex-end; */
 	transition: 0.4s ease-out;
 	box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 1rem;
 }
 
 div.card-int:hover
@@ -763,4 +766,70 @@ div.card-int .info button:hover
 {
 	background: dodgerblue;
 	color: white;
+}
+
+.inter
+{
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 380px)
+{
+  div.inter
+  {
+    margin-left: -1px;
+  }
+}
+
+
+/* CONTACT */
+.buttonSend
+{
+  min-width: 150px;
+  max-width: 250px;
+  display: block;
+  padding: 1em 2em;
+  margin-left: 3em;
+  border: none;
+  background: none;
+  color: inherit;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.buttonSend:focus
+{
+  outline: none;
+}
+
+.buttonSend > span
+{
+  vertical-align: middle;
+}
+
+.buttonSend
+{
+  color: rgb(103, 164, 214);
+  border-color: rgb(103, 164, 214);
+}
+
+@media (max-width: 530px)
+{
+  .buttonSend
+  {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 490px)
+{
+  .buttonSend
+  {
+    margin-top: 20px;
+    margin-left: -10px;
+  }
 }
