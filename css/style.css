@@ -833,3 +833,43 @@ div.card-int .info button:hover
     margin-left: -10px;
   }
 }
+
+.contactBox
+{
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 15px;
+}
+
+.contactForm
+{
+  margin:auto;
+  width: 60% !important;
+}
+
+.contactGroup
+{
+  margin-top: 30px;
+}
+
+
+/* FOOTER */
+#footer
+{
+  background: #333;
+  color: #777;
+  padding: 10px 0;
+  text-align: center;
+}
+.socials ul
+{
+  padding-left: 0;
+}
+.socials ul li {
+	display: inline-block;
+	margin: 0 20px;
+}
+.socials i.fa {
+	padding-top: 10px;
+	color: #fff;
+}
