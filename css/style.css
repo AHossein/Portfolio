@@ -23,6 +23,39 @@ a.navBg:hover, a.navBg:focus, button.navBg:hover, button.navBg:focus
 }
 
 /* VERTICAL NAVBAR */
+#sideNav
+{
+  display: flex;
+}
+
+.with_nav #sideNav {
+    display: none;
+}
+
+.with_nav #navAccess
+{
+  left: 0;
+}
+
+#navAccess
+{
+  /* -webkit-transition: all .3s ease;
+-moz-transition: all .3s ease;
+-ms-transition: all .3s ease;
+-o-transition: all .3s ease;
+transition: all .3s ease; */
+}
+
+#navAccess
+{
+  position: fixed;
+  left: 20rem;
+  top: 10px;
+  border-radius: 0px 4px 4px 0px;
+  width: 35px;
+  transition-delay: .3s;
+}
+
 @media (min-width: 992px)
 {
   #sideNav
@@ -76,6 +109,14 @@ a.navBg:hover, a.navBg:focus, button.navBg:hover, button.navBg:focus
     height: 100%;
     overflow-y: scroll;
     position: relative;
+  }
+}
+
+@media (max-width: 992px)
+{
+  #navAccess
+  {
+    display: none;
   }
 }
 
@@ -203,7 +244,7 @@ h1 span
 {
   #about, #experience, #education, #abilities, #interests, #contact
   {
-    margin-left: 21rem;
+    /* margin-left: 21rem; */
   }
 }
 

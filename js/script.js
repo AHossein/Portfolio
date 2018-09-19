@@ -26,10 +26,22 @@ $(document).ready(function(){
 });
 
 
-//SMOOTHSCROLL PLUGIN
+// SMOOTHSCROLL PLUGIN
 var scrollAbout = new SmoothScroll('a[href*="#about"]');
 var scrollExp = new SmoothScroll('a[href*="#experience"]');
 var scrollEduc = new SmoothScroll('a[href*="#education"]');
 var scrollAbilities = new SmoothScroll('a[href*="#abilities"]');
 var scrollInter = new SmoothScroll('a[href*="#interests"]');
 var scrollContact = new SmoothScroll('a[href*="#contact"]');
+
+
+
+// HIDDEN NAVBAR
+var nav = document.getElementById('navAccess'),
+    body = document.body;
+
+nav.addEventListener("click", function(e)
+{
+    body.className = body.className? '' : 'with_nav';
+    e.preventDefault();
+});
