@@ -211,6 +211,13 @@ nav a:hover, nav a:focus
 }
 
 /* ABOUT SECTION */
+.aboutStyle
+{
+  text-align: center;
+  /* height: 100vh; */
+
+}
+
 h1.bold, h3.bold
 {
   font-weight: bold;
@@ -227,6 +234,21 @@ h1 span
   font-weight: bold;
 }
 
+.aboutStyle
+{
+  margin-top: 50vh;
+  transform: translateY(21.3%);
+}
+
+@media (min-width: 992px)
+{
+  .aboutStyle
+  {
+    margin-top: 50vh;
+    transform: translateY(-50%);
+  }
+}
+
 @media (max-width: 992px)
 {
   #about
@@ -238,6 +260,10 @@ h1 span
   {
     position: relative !important;
   }
+  .aboutStyle
+  {
+    height: 100vh;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1800px)
@@ -248,6 +274,13 @@ h1 span
   }
 }
 
+@media (max-height: 410px)
+{
+  .aboutStyle
+  {
+    height: 100vh;
+  }
+}
 
 /* ICONS EFFECT */
 @-webkit-keyframes pulse
@@ -306,7 +339,12 @@ h1 span
   color: rgb(103, 164, 214);
 }
 
-.social-links
+.section-header
+{
+  margin-bottom: 90px;
+}
+
+/* .social-links
 {
   margin: 50px 0 30px 0;
   font-size: 20px;
@@ -318,6 +356,20 @@ h1 span
   margin: 0;
   padding: 0;
   margin-left: 42px;
+} */
+
+#newLinks
+{
+  text-align: center;
+}
+
+.social-links ul li
+{
+	display: inline-block;
+  /* margin: 50px 0 30px 0; */
+  margin-top: 50px;
+  margin-right: 42px;
+  font-size: 20px;
 }
 
 /* BUTTON EFFECT */
@@ -520,30 +572,36 @@ h1 span
 
 @media (max-width: 765px)
 {
-  .social-links
+  /* .social-links
   {
     margin-left: -60px;
-  }
-}
-
-@media (max-width: 530px)
-{
+  } */
   .button
   {
     font-size: 18px;
+    margin-left: -10px;
   }
 }
+
+/* @media (max-width: 530px)
+{
+  .button
+  {
+    margin-left: -10px;
+  }
+} */
 
 @media (max-width: 490px)
 {
   .social-links
   {
-    margin-left: -70px;
+    /* margin-left: -70px; */
   }
   .button
   {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-left: -10px;
+    align-items: center;
   }
 }
 
@@ -897,20 +955,25 @@ div.card-int .info button:hover
 /* FOOTER */
 #footer
 {
-  background: #333;
+  background: #343a40;
   color: #777;
   padding: 10px 0;
   text-align: center;
 }
+
 .socials ul
 {
   padding-left: 0;
 }
-.socials ul li {
+
+.socials ul li
+{
 	display: inline-block;
 	margin: 0 20px;
 }
-.socials i.fa {
+
+.socials i.fa
+{
 	padding-top: 10px;
 	color: #fff;
 }

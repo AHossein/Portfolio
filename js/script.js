@@ -21,18 +21,31 @@ $(document).ready(function(){
   var typed = new Typed('#typed', {
     stringsElement: '#typed-strings',
     backSpeed: 40,
-    typeSpeed: 90
+    typeSpeed: 90,
+    loop: true
   });
 });
 
 
 // SMOOTHSCROLL PLUGIN
-var scrollAbout = new SmoothScroll('a[href*="#about"]');
-var scrollExp = new SmoothScroll('a[href*="#experience"]');
-var scrollEduc = new SmoothScroll('a[href*="#education"]');
-var scrollAbilities = new SmoothScroll('a[href*="#abilities"]');
-var scrollInter = new SmoothScroll('a[href*="#interests"]');
-var scrollContact = new SmoothScroll('a[href*="#contact"]');
+var scrollAbout = new SmoothScroll('a[href*="#about"]', {
+  speed: 1500
+});
+var scrollExp = new SmoothScroll('a[href*="#experience"]', {
+  speed: 1500
+});
+var scrollEduc = new SmoothScroll('a[href*="#education"]', {
+  speed: 1500
+});
+var scrollAbilities = new SmoothScroll('a[href*="#abilities"]', {
+  speed: 1500
+});
+var scrollInter = new SmoothScroll('a[href*="#interests"]', {
+  speed: 1500
+});
+var scrollContact = new SmoothScroll('a[href*="#contact"]', {
+  speed: 1500
+});
 
 
 
