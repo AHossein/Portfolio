@@ -29,7 +29,7 @@ a.navBg:hover, a.navBg:focus, button.navBg:hover, button.navBg:focus
 }
 
 .with_nav #sideNav {
-    display: none;
+  display: none;
 }
 
 .with_nav #navAccess
@@ -40,10 +40,10 @@ a.navBg:hover, a.navBg:focus, button.navBg:hover, button.navBg:focus
 #navAccess
 {
   /* -webkit-transition: all .3s ease;
--moz-transition: all .3s ease;
--ms-transition: all .3s ease;
--o-transition: all .3s ease;
-transition: all .3s ease; */
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; */
 }
 
 #navAccess
@@ -346,16 +346,16 @@ h1 span
 
 /* .social-links
 {
-  margin: 50px 0 30px 0;
-  font-size: 20px;
+margin: 50px 0 30px 0;
+font-size: 20px;
 }
 
 .social-links li
 {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  margin-left: 42px;
+display: inline-block;
+margin: 0;
+padding: 0;
+margin-left: 42px;
 } */
 
 #newLinks
@@ -365,7 +365,7 @@ h1 span
 
 .social-links ul li
 {
-	display: inline-block;
+  display: inline-block;
   /* margin: 50px 0 30px 0; */
   margin-top: 50px;
   margin-right: 42px;
@@ -574,7 +574,7 @@ h1 span
 {
   /* .social-links
   {
-    margin-left: -60px;
+  margin-left: -60px;
   } */
   .button
   {
@@ -585,10 +585,10 @@ h1 span
 
 /* @media (max-width: 530px)
 {
-  .button
-  {
-    margin-left: -10px;
-  }
+.button
+{
+margin-left: -10px;
+}
 } */
 
 @media (max-width: 490px)
@@ -704,7 +704,7 @@ h1 span
 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  }
+}
 
 .skills .card img
 {
@@ -755,28 +755,28 @@ h1 span
 /* INTERESTS */
 *
 {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 div.wrapper
 {
-	display: flex;
-	width: 100%;
-	/* justify-content: space-around; */
+  display: flex;
+  width: 100%;
+  /* justify-content: space-around; */
   margin: 20px;
 }
 
 div.card-int
 {
-	width: 280px;
-	height: 360px;
-	border-radius: 15px;
-	padding: 1.5rem;
-	background: white;
-	position: relative;
-	/* align-items: flex-end; */
-	transition: 0.4s ease-out;
-	box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  width: 280px;
+  height: 360px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: white;
+  position: relative;
+  /* align-items: flex-end; */
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -785,86 +785,86 @@ div.card-int
 
 div.card-int:hover
 {
-	transform: translateY(20px);
+  transform: translateY(20px);
 }
 
 div.card-int:hover:before
 {
-	opacity: 1;
+  opacity: 1;
 }
 
 div.card-int:hover .info
 {
-	opacity: 1;
-	transform: translateY(0px);
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 div.card-int:before
 {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: block;
-	width: 100%;
-	height: 100%;
-	border-radius: 15px;
-	background: rgba(0, 0, 0, 0.6);
-	z-index: 2;
-	transition: 0.5s;
-	opacity: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
 }
 
 div.card-int img
 {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	position: absolute;
-	top: 0;
-	left: 0;
-	border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
 }
 
 div.card-int .info
 {
-	position: relative;
-	z-index: 3;
-	color: white;
-	opacity: 0;
-	transform: translateY(60px);
-	transition: 0.7s;
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 0.7s;
 }
 
 div.card-int .info h1
 {
-	margin: 0px;
+  margin: 0px;
 }
 
 div.card-int .info p
 {
-	letter-spacing: 1px;
-	font-size: 15px;
-	margin-top: 8px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
 }
 
 div.card-int .info button
 {
-	padding: 0.6rem;
-	outline: none;
-	border: none;
-	border-radius: 3px;
-	background: white;
-	color: black;
-	font-weight: bold;
-	cursor: pointer;
-	transition: 0.4s ease;
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
 }
 
 div.card-int .info button:hover
 {
-	background: dodgerblue;
-	color: white;
+  background: dodgerblue;
+  color: white;
 }
 
 .inter
@@ -968,12 +968,12 @@ div.card-int .info button:hover
 
 .socials ul li
 {
-	display: inline-block;
-	margin: 0 20px;
+  display: inline-block;
+  margin: 0 20px;
 }
 
 .socials i.fa
 {
-	padding-top: 10px;
-	color: #fff;
+  padding-top: 10px;
+  color: #fff;
 }
