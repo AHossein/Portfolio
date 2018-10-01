@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,800');
+
 /* NAVBAR */
 /* SIDEBAR BACKGROUND EFFECTS */
 
@@ -34,8 +36,14 @@ a.navBg:hover, a.navBg:focus, button.navBg:hover, button.navBg:focus
 
 .with_nav #navAccess
 {
+  /* -webkit-transition: left 1s; */
   left: 0;
 }
+
+/* .with_nav #navAccess:focus
+{
+  left: 0;
+} */
 
 #navAccess
 {
@@ -117,6 +125,10 @@ a.navBg:hover, a.navBg:focus, button.navBg:hover, button.navBg:focus
   #navAccess
   {
     display: none;
+  }
+  .with_nav #sideNav
+  {
+    display: flex;
   }
 }
 
@@ -220,6 +232,7 @@ nav a:hover, nav a:focus
 
 h1.bold, h3.bold
 {
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: bold;
 }
 
@@ -232,6 +245,7 @@ h1 span
 {
   font-size: 40px;
   font-weight: bold;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .aboutStyle
@@ -606,6 +620,11 @@ margin-left: -10px;
 }
 
 /* EXPERIENCES SECTION */
+#experience
+{
+  background-color: #F9F9FC;
+}
+
 .small-container
 {
   text-align: center;
@@ -656,6 +675,11 @@ margin-left: -10px;
 }
 
 /* ABILITIES SECTION */
+#abilities
+{
+  background-color: #f9f9fc;
+}
+
 .flex
 {
   display: -webkit-box;
