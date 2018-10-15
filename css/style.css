@@ -90,8 +90,8 @@ a.navBg:hover, a.navBg:focus, button.navBg:hover, button.navBg:focus
   }
   #sideNav .navbar-brand .img-profile
   {
-    max-width: 10rem;
-    max-height: 10rem;
+    max-width: 15rem;
+    max-height: 15rem;
     border: 0.4rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse
