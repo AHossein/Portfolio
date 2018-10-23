@@ -251,11 +251,11 @@ h1 span
   font-weight: bold;
 }
 
-.aboutStyle
+/* .aboutStyle
 {
   margin-top: 50vh;
   transform: translateY(21.3%);
-}
+} */
 
 @media (min-width: 992px)
 {
