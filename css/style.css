@@ -257,6 +257,7 @@ h1 span
   transform: translateY(21.3%);
 } */
 
+
 @media (min-width: 992px)
 {
   .aboutStyle
@@ -280,6 +281,7 @@ h1 span
   .aboutStyle
   {
     height: 100vh;
+    margin-bottom: 200px;
   }
 }
 
@@ -626,6 +628,14 @@ margin-left: -10px;
 #experience
 {
   /* background-color: #F9F9FC; */
+}
+
+@media (max-width: 350px)
+{
+  .experienceStyle
+  {
+    margin-top:
+  }
 }
 
 .job-title
