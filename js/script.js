@@ -1,5 +1,5 @@
 // NAVBAR SCROLL EFFECT FUNCTION
-jQuery(function ($)
+jQuery(function ($) 
 {
   var x = window.matchMedia("(min-width: 992px)");
 
